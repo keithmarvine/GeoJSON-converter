@@ -12,3 +12,7 @@ Features:
 4. Optional map preview of the uploaded layers using Leaflet
 
 5. Modern, responsive, and clean UI design
+
+Live Demo
+
+Try: https://keithmarvine.github.io/GeoJSON-converter/
