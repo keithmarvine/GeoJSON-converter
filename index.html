@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeoJSON Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/togeojson"></script>
+  <script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>GeoJSON Converter</h1>
+      <p>Convert KML, GPX, SHP or GeoJSON files to a consistent format and view them on a map.</p>
+    </header>
+
+    <section class="upload-section">
+      <input type="file" id="upload" accept=".kml,.gpx,.zip,.geojson" multiple />
+      <div id="progress-container"></div>
+      <div id="status" style="display: none;">All done!</div>
+    </section>
+
+    <section>
+      <pre id="output"></pre>
+      <button id="previewMap" style="display: none;">Preview on Map</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
